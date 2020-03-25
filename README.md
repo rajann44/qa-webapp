@@ -15,6 +15,7 @@ Chosen simple approach, which means:
 * simple UI
   * just lists of items
   * some animated UI components not to be used in production, I was just playing :)
+  * data-visualisation graphs not appropriate for larger data sets
 * layout non-responsive
   * no tests included
   * however I did implement the bonus spec - user login
