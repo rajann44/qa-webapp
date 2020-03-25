@@ -2,7 +2,7 @@
 
 Chosen simple approach, which means:
 
-* localStorage user for data persistence
+* localStorage used for data persistence
 * data manipulation efficiency inconsequential
 * error handling/logging inconsequential
 * simple architectural design
