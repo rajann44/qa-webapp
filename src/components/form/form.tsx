@@ -36,6 +36,7 @@ export const TextInput = (props: TextInputProps) => {
         name={name}
         value={value}
         disabled={disabled}
+        maxLength={32}
         onChange={onChange}
         onFocus={() => changeMode(ModeType.Active)}
         onBlur={() => changeMode(value ? ModeType.FilledIn : ModeType.Empty)}
