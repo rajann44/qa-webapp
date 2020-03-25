@@ -4,7 +4,7 @@ Chosen simple approach, which means:
 
 * localStorage used for data persistence
 * data manipulation efficiency inconsequential
-* local user logging, no auth lib required (but prepared to use)
+* local user logging, no auth lib required (but prepared for use)
 * error handling/logging inconsequential
 * simple architectural design
   * no original list owner concept, list-assigned users have same priviledges
