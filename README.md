@@ -1,37 +1,23 @@
-## Release Notes
+## QA automation homework assignment
 
-Chosen simple approach, which means:
+### The App
 
-* localStorage used for data persistence
-* data manipulation efficiency inconsequential
-* local user logging, no auth lib required (but prepared for use)
-* error handling/logging inconsequential
-* simple architectural design
-  * no original list owner concept, list-assigned users have same priviledges
-  * by design, deleting user from list leaves "ghost" items in place (could be changed easily)
-* simple UX
-  * no confirmation dialogs
-  * no user instructions
-* simple UI
-  * just lists of items
-  * some animated UI components not to be used in production, I was just playing :)
-  * data-visualisation graphs not appropriate for larger data sets
-* layout non-responsive
-  * no tests included
-  * however I did implement the bonus spec - user login
+This repository contains a simple web application, with Dockerfile and docker-compose files to make it easy to run it as a container. If you decide to use docker-compose, the application will be mapped to host port 3567.
 
-## UI Resources
+The application itself permits user to edit budgets (lists of payment transactions) and also to share it with other users. It can also display charts with transaction summary that can be filtered by budgets and users.
 
-You can find associated Figma resources here:<br />
-https://www.figma.com/file/5JlwFAZQWjwxk5OHwI67aC/Incomes-Expenses-App?node-id=0%3A1
+When you first open the app, you will be asked to log in or create a new user. Creating a new user is very simple, just enter a new user name and password. We believe the interface is simple and intuitive, but if you need more clarification, please let us know.
 
-## How to Run
+### The task
 
-### `yarn`
+Your task will be to write automated tests for the provided app. Even though the app is quite simple, we understand that testing it thoroughly would require a lot of effort and is not necessary - the purpose of this task is to demonstrate your ability to create automated tests. To make things easier, you can ignore the multi-user functionality (of course, you may do multi-user tests for bonus points :) ) and only test the basics - creating a budget, adding couple of transactions in different categories, making sure the totals and subtotals match, etc.
 
-Install all required dependencies.
+### The solution
 
-### `yarn start`
+Your solution should contain:
+* description of the test script, what use cases were tested, etc.
+* the automated test itself
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We leave the selection of tools and frameworks to you, as long as they are generally available and we will be able to run the tests. We would prefere if the tests were dockerized and a shell script would be provided to execute them.
+
+We did not leave any intentional bugs in the app (which does not mean it's perfect), so it's OK if all the tests pass.
