@@ -1,6 +1,6 @@
 ## QA automation homework assignment
 
-### The App
+### The app
 
 This repository contains a simple web application, with Dockerfile and docker-compose files to make it easy to run it as a container. If you decide to use docker-compose, the application will be mapped to host port 3567.
 
@@ -15,7 +15,8 @@ Your task will be to write automated tests for the provided app. Even though the
 ### The solution
 
 Your solution should contain:
-* description of the test script, what use cases were tested, etc.
+* brief description of the approach and tools used
+* description of the test script, what use cases were covered, etc.
 * the automated test itself
 
 We leave the selection of tools and frameworks to you, as long as they are generally available and we will be able to run the tests. We would prefere if the tests were dockerized and a shell script would be provided to execute them.
