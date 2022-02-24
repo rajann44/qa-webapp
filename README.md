@@ -2,7 +2,7 @@
 
 ### The app
 
-This repository contains a simple web application, with Dockerfile and docker-compose files to make it easy to run it as a container. If you decide to use docker-compose, the application will be mapped to host port 3567.
+This repository contains a simple web application, with Dockerfile and docker-compose files to make it easy to run as a container. If you decide to use the provided docker-compose, the application will be mapped to host port 3567.
 
 The application itself permits user to edit budgets (lists of payment transactions) and also to share it with other users. It can also display charts with transaction summary that can be filtered by budgets and users.
 
@@ -10,7 +10,7 @@ When you first open the app, you will be asked to log in or create a new user. C
 
 ### The task
 
-Your task will be to write automated tests for the provided app. Even though the app is quite simple, we understand that testing it thoroughly would require a lot of effort and is not necessary - the purpose of this task is to demonstrate your ability to create automated tests. To make things easier, you can ignore the multi-user functionality (of course, you may do multi-user tests for bonus points :) ) and only test the basics - creating a budget, adding couple of transactions in different categories, making sure the totals and subtotals match, etc.
+Your task will be to write automated tests for the provided app. Even though the app is quite simple, we understand that testing it thoroughly would require a lot of effort and is not necessary - the purpose of this task is to demonstrate your ability to create automated tests. To make things easier, you can ignore the multi-user functionality (of course, you may do multi-user tests for bonus points :) ) and only test the basics - creating a budget, adding couple of transactions in different categories, making sure the totals and subtotals match, deleting a transactions/category, etc.
 
 ### The solution
 
@@ -19,6 +19,6 @@ Your solution should contain:
 * description of the test script, what use cases were covered, etc.
 * the automated test itself
 
-We leave the selection of tools and frameworks to you, as long as they are generally available and we will be able to run the tests. We would prefere if the tests were dockerized and a shell script would be provided to execute them.
+We leave the selection of tools and frameworks to you, as long as they are generally available and we will be able to run the tests. We would prefer if the tests were dockerized and a shell script is be provided to execute them.
 
 We did not leave any intentional bugs in the app (which does not mean it's perfect), so it's OK if all the tests pass.
