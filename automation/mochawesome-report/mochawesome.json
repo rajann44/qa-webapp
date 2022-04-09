@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-09T20:17:51.820Z",
-    "end": "2022-04-09T20:17:58.649Z",
-    "duration": 6829,
+    "start": "2022-04-09T20:40:07.581Z",
+    "end": "2022-04-09T20:40:15.465Z",
+    "duration": 7884,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "26329d46-9748-4eab-b714-7005f6b975ba",
+      "uuid": "1f013842-fc7e-4f9d-9077-f2ab00b309c9",
       "title": "",
       "fullFile": "cypress/integration/stats.spec.js",
       "file": "cypress/integration/stats.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
+          "uuid": "228835cf-ec04-4f13-92c6-c79c53f84d72",
           "title": "Verify Stats",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Verify Budget Stats",
               "fullTitle": "Verify Stats Verify Budget Stats",
               "timedOut": null,
-              "duration": 6744,
+              "duration": 7788,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();\ncy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();\ncy.contains('a', 'Statistics').click();\ncy.visit(\"/stats\");",
               "err": {},
-              "uuid": "253c88ad-9509-413e-b10e-0eb9f1019a83",
-              "parentUUID": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
+              "uuid": "330753ca-6902-492f-9130-a41a00a09afe",
+              "parentUUID": "228835cf-ec04-4f13-92c6-c79c53f84d72",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "253c88ad-9509-413e-b10e-0eb9f1019a83"
+            "330753ca-6902-492f-9130-a41a00a09afe"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6744,
+          "duration": 7788,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -94,12 +94,14 @@
     },
     "marge": {
       "options": {
-        "id": "default",
-        "reportDir": "cypress/reports/mocha",
-        "quite": true,
-        "overwrite": false,
-        "html": false,
-        "json": true
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+        }
       },
       "version": "6.2.0"
     }
