@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-09T20:03:52.701Z",
-    "end": "2022-04-09T20:04:00.292Z",
-    "duration": 7591,
+    "start": "2022-04-09T20:17:51.820Z",
+    "end": "2022-04-09T20:17:58.649Z",
+    "duration": 6829,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d03dc848-3f16-4ea8-ba9f-b6a3a9faec1c",
+      "uuid": "26329d46-9748-4eab-b714-7005f6b975ba",
       "title": "",
       "fullFile": "cypress/integration/stats.spec.js",
       "file": "cypress/integration/stats.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+          "uuid": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
           "title": "Verify Stats",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Verify Budget Stats",
               "fullTitle": "Verify Stats Verify Budget Stats",
               "timedOut": null,
-              "duration": 7394,
+              "duration": 6744,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();\ncy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();\ncy.contains('a', 'Statistics').click();\ncy.visit(\"/stats\");",
               "err": {},
-              "uuid": "366ec80e-b9bb-40b4-ba0c-e76105020228",
-              "parentUUID": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+              "uuid": "253c88ad-9509-413e-b10e-0eb9f1019a83",
+              "parentUUID": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "366ec80e-b9bb-40b4-ba0c-e76105020228"
+            "253c88ad-9509-413e-b10e-0eb9f1019a83"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7394,
+          "duration": 6744,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

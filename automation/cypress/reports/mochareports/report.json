@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-09T20:03:42.582Z",
-    "end": "2022-04-09T20:04:00.292Z",
-    "duration": 12931,
+    "start": "2022-04-09T20:17:41.483Z",
+    "end": "2022-04-09T20:17:58.649Z",
+    "duration": 13001,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "824b9bd7-4e9d-430e-aea6-6b5c4d661de2",
+      "uuid": "c333cea3-3f1f-4f77-964b-d72e29387371",
       "title": "",
       "fullFile": "cypress/integration/budget.spec.js",
       "file": "cypress/integration/budget.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+          "uuid": "016227d5-f1c5-42ed-90ae-016a4a96f63f",
           "title": "Login into App",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Add Budget",
               "fullTitle": "Login into App Add Budget",
               "timedOut": null,
-              "duration": 4686,
+              "duration": 5388,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();",
               "err": {},
-              "uuid": "038241cb-a5b1-4b52-830f-b207e303a454",
-              "parentUUID": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+              "uuid": "b6f816c9-5c8a-4f72-9297-955c302b18bf",
+              "parentUUID": "016227d5-f1c5-42ed-90ae-016a4a96f63f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Add Budget Entry",
               "fullTitle": "Login into App Add Budget Entry",
               "timedOut": null,
-              "duration": 851,
+              "duration": 869,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();",
               "err": {},
-              "uuid": "785c7635-6523-4594-937c-5dec136f6b8b",
-              "parentUUID": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+              "uuid": "4c243591-e604-40c3-aad4-3a45beda1f01",
+              "parentUUID": "016227d5-f1c5-42ed-90ae-016a4a96f63f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "038241cb-a5b1-4b52-830f-b207e303a454",
-            "785c7635-6523-4594-937c-5dec136f6b8b"
+            "b6f816c9-5c8a-4f72-9297-955c302b18bf",
+            "4c243591-e604-40c3-aad4-3a45beda1f01"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5537,
+          "duration": 6257,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,7 +95,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "d03dc848-3f16-4ea8-ba9f-b6a3a9faec1c",
+      "uuid": "26329d46-9748-4eab-b714-7005f6b975ba",
       "title": "",
       "fullFile": "cypress/integration/stats.spec.js",
       "file": "cypress/integration/stats.spec.js",
@@ -104,7 +104,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+          "uuid": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
           "title": "Verify Stats",
           "fullFile": "",
           "file": "",
@@ -115,7 +115,7 @@
               "title": "Verify Budget Stats",
               "fullTitle": "Verify Stats Verify Budget Stats",
               "timedOut": null,
-              "duration": 7394,
+              "duration": 6744,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -124,20 +124,20 @@
               "context": null,
               "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();\ncy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();\ncy.contains('a', 'Statistics').click();\ncy.visit(\"/stats\");",
               "err": {},
-              "uuid": "366ec80e-b9bb-40b4-ba0c-e76105020228",
-              "parentUUID": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+              "uuid": "253c88ad-9509-413e-b10e-0eb9f1019a83",
+              "parentUUID": "f63f973f-8c12-44d6-b65f-fbe7199702b1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "366ec80e-b9bb-40b4-ba0c-e76105020228"
+            "253c88ad-9509-413e-b10e-0eb9f1019a83"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7394,
+          "duration": 6744,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
