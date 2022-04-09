@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-09T20:03:42.582Z",
+    "end": "2022-04-09T20:04:00.292Z",
+    "duration": 12931,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "824b9bd7-4e9d-430e-aea6-6b5c4d661de2",
+      "title": "",
+      "fullFile": "cypress/integration/budget.spec.js",
+      "file": "cypress/integration/budget.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+          "title": "Login into App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Budget",
+              "fullTitle": "Login into App Add Budget",
+              "timedOut": null,
+              "duration": 4686,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();",
+              "err": {},
+              "uuid": "038241cb-a5b1-4b52-830f-b207e303a454",
+              "parentUUID": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add Budget Entry",
+              "fullTitle": "Login into App Add Budget Entry",
+              "timedOut": null,
+              "duration": 851,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();",
+              "err": {},
+              "uuid": "785c7635-6523-4594-937c-5dec136f6b8b",
+              "parentUUID": "7f62930c-24e6-463d-bd96-c370627e2e3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "038241cb-a5b1-4b52-830f-b207e303a454",
+            "785c7635-6523-4594-937c-5dec136f6b8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5537,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d03dc848-3f16-4ea8-ba9f-b6a3a9faec1c",
+      "title": "",
+      "fullFile": "cypress/integration/stats.spec.js",
+      "file": "cypress/integration/stats.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+          "title": "Verify Stats",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Budget Stats",
+              "fullTitle": "Verify Stats Verify Budget Stats",
+              "timedOut": null,
+              "duration": 7394,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('label', 'Budget Name').next('input').type('Budget 1');\ncy.get('button[type=button]').eq(1).click();\ncy.contains('h3', 'Budget 1').click();\ncy.contains('label', 'Entry Name').next('input').type('Entry 1');\ncy.get('select').select('Food');\ncy.contains('label', 'Amount').next('input').type('200');\ncy.get('button[type=button]').eq(3).click();\ncy.contains('a', 'Statistics').click();\ncy.visit(\"/stats\");",
+              "err": {},
+              "uuid": "366ec80e-b9bb-40b4-ba0c-e76105020228",
+              "parentUUID": "bcfdc5f4-750e-498a-9765-4acf7f617022",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "366ec80e-b9bb-40b4-ba0c-e76105020228"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
