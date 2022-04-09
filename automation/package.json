@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "install": "npm install",
+        "start": "cypress install",
         "cypress:open": "cypress open",
         "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
         "pretest": "npm run clean:reports",
